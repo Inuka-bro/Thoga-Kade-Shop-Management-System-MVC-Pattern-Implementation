@@ -1,4 +1,4 @@
-package edu.icet.ecom;
+package controller;
 
 public class DashboardFormController {
 
