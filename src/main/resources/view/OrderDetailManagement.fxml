@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="418.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemManagementFormComtroller">
+   <children>
+      <TableView layoutX="325.0" layoutY="96.0" prefHeight="272.0" prefWidth="499.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Item Code" />
+          <TableColumn prefWidth="75.0" text="Description" />
+            <TableColumn prefWidth="75.0" text="Pack Size" />
+            <TableColumn prefWidth="98.4000244140625" text="Unit Price" />
+            <TableColumn prefWidth="98.4000244140625" text="Qty On Hand" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="203.0" layoutY="33.0" prefHeight="39.0" prefWidth="460.0" text="Item Management Form">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="29.0" layoutX="640.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/37-370737_clipboard-clipart-waiver-action-item-icon-png-transparent.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
