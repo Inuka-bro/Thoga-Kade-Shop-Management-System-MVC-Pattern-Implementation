@@ -36,20 +36,20 @@
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField focusColor="#42a840" layoutX="143.0" layoutY="95.0" prefHeight="26.0" prefWidth="177.0" />
+      <JFXTextField fx:id="txtItemCode" focusColor="#42a840" layoutX="143.0" layoutY="95.0" prefHeight="26.0" prefWidth="177.0" />
       <Label layoutX="49.0" layoutY="135.0" prefHeight="26.0" prefWidth="83.0" text="Description :">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField focusColor="#42a840" layoutX="143.0" layoutY="135.0" prefHeight="26.0" prefWidth="177.0" />
+      <JFXTextField fx:id="txtDescription" focusColor="#42a840" layoutX="143.0" layoutY="135.0" prefHeight="26.0" prefWidth="177.0" />
       <Label layoutX="49.0" layoutY="182.0" prefHeight="26.0" prefWidth="83.0" text="Pack Size   :">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField focusColor="#42a840" layoutX="143.0" layoutY="182.0" prefHeight="26.0" prefWidth="177.0" />
-      <JFXTextField focusColor="#42a840" layoutX="143.0" layoutY="245.0" prefHeight="26.0" prefWidth="177.0" />
+      <JFXTextField fx:id="txtPackSize" focusColor="#42a840" layoutX="143.0" layoutY="182.0" prefHeight="26.0" prefWidth="177.0" />
+      <JFXTextField fx:id="txtUnitPrice" focusColor="#42a840" layoutX="143.0" layoutY="245.0" prefHeight="26.0" prefWidth="177.0" />
       <Label layoutX="49.0" layoutY="251.0" prefHeight="26.0" prefWidth="83.0" text="Unit Price   :">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
@@ -60,7 +60,7 @@
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField focusColor="#42a840" layoutX="143.0" layoutY="288.0" prefHeight="26.0" prefWidth="177.0" />
+      <JFXTextField fx:id="txtQtyOnHand" focusColor="#42a840" layoutX="143.0" layoutY="288.0" prefHeight="26.0" prefWidth="177.0" />
       <JFXButton layoutX="39.0" layoutY="357.0" prefHeight="39.0" prefWidth="79.0" style="-fx-background-color: #9ef01a;" text="Add" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="16.0" />
