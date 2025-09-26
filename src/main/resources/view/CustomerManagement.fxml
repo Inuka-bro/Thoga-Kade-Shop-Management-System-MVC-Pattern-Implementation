@@ -43,55 +43,55 @@
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField focusColor="#42a840" layoutX="127.0" layoutY="85.0" prefHeight="26.0" prefWidth="177.0" />
+      <JFXTextField fx:id="txtCustomerId" focusColor="#42a840" layoutX="127.0" layoutY="85.0" prefHeight="26.0" prefWidth="177.0" />
       <Label layoutX="39.0" layoutY="124.0" prefHeight="26.0" prefWidth="94.0" text="Title               :">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextArea focusColor="#42a840" layoutX="133.0" layoutY="124.0" prefHeight="55.0" prefWidth="178.0" />
+      <JFXTextArea fx:id="txtTitle" focusColor="#42a840" layoutX="133.0" layoutY="124.0" prefHeight="55.0" prefWidth="178.0" />
       <Label layoutX="39.0" layoutY="215.0" prefHeight="26.0" prefWidth="88.0" text="Name             :">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField focusColor="#42a840" layoutX="133.0" layoutY="215.0" prefHeight="26.0" prefWidth="178.0" />
+      <JFXTextField fx:id="txtName" focusColor="#42a840" layoutX="133.0" layoutY="215.0" prefHeight="26.0" prefWidth="178.0" />
       <Label layoutX="33.0" layoutY="271.0" prefHeight="26.0" prefWidth="94.0" text="Date Of Birth : ">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <DatePicker layoutX="127.0" layoutY="272.0" prefHeight="26.0" prefWidth="178.0" />
+      <DatePicker fx:id="dPDateOfBith" layoutX="127.0" layoutY="272.0" prefHeight="26.0" prefWidth="178.0" />
       <Label layoutX="32.0" layoutY="314.0" prefHeight="26.0" prefWidth="94.0" text="Salary             : ">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField focusColor="#42a840" layoutX="127.0" layoutY="314.0" prefHeight="26.0" prefWidth="186.0" />
+      <JFXTextField fx:id="txtSalary" focusColor="#42a840" layoutX="127.0" layoutY="314.0" prefHeight="26.0" prefWidth="186.0" />
       <Label layoutX="32.0" layoutY="357.0" prefHeight="26.0" prefWidth="94.0" text="Address       :  ">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField focusColor="#42a840" layoutX="127.0" layoutY="357.0" prefHeight="26.0" prefWidth="186.0" />
+      <JFXTextField fx:id="txtAddress" focusColor="#42a840" layoutX="127.0" layoutY="357.0" prefHeight="26.0" prefWidth="186.0" />
       <Label layoutX="36.0" layoutY="402.0" prefHeight="26.0" prefWidth="94.0" text="City              :     ">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField focusColor="#42a840" layoutX="123.0" layoutY="402.0" prefHeight="26.0" prefWidth="193.0" />
+      <JFXTextField fx:id="txtCity" focusColor="#42a840" layoutX="123.0" layoutY="402.0" prefHeight="26.0" prefWidth="193.0" />
       <Label layoutX="36.0" layoutY="447.0" prefHeight="26.0" prefWidth="88.0" text="Province   :     ">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXComboBox focusColor="#42a840" layoutX="123.0" layoutY="448.0" prefHeight="26.0" prefWidth="194.0" />
+      <JFXComboBox fx:id="cmbProvince" focusColor="#42a840" layoutX="123.0" layoutY="448.0" prefHeight="26.0" prefWidth="194.0" />
       <Label layoutX="32.0" layoutY="490.0" prefHeight="26.0" prefWidth="94.0" text="Postal Code   : ">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField focusColor="#42a840" layoutX="129.0" layoutY="490.0" prefHeight="26.0" prefWidth="186.0" />
+      <JFXTextField fx:id="txtPostalCode" focusColor="#42a840" layoutX="129.0" layoutY="490.0" prefHeight="26.0" prefWidth="186.0" />
       <JFXButton layoutX="88.0" layoutY="552.0" prefHeight="39.0" prefWidth="70.0" style="-fx-background-color: #9ef01a;" text="Add" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="16.0" />
