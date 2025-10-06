@@ -5,7 +5,7 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
-public class OrderManagementFormController {
+public class ItemManagementFormController {
 
     @FXML
     private JFXButton btnAdd;
@@ -17,13 +17,19 @@ public class OrderManagementFormController {
     private JFXButton btndelete;
 
     @FXML
-    private JFXTextField txtCustomerId;
+    private JFXTextField txtDescription;
 
     @FXML
-    private JFXTextField txtOrderDate;
+    private JFXTextField txtItemCode;
 
     @FXML
-    private JFXTextField txtOrderId;
+    private JFXTextField txtPackSize;
+
+    @FXML
+    private JFXTextField txtQtyOnHand;
+
+    @FXML
+    private JFXTextField txtUnitPrice;
 
     @FXML
     void btnAddOnAction(ActionEvent event) {

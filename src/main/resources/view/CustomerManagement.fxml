@@ -38,30 +38,30 @@
             <Image url="@../img/images.png" />
          </image>
       </ImageView>
-      <Label layoutX="39.0" layoutY="85.0" prefHeight="26.0" prefWidth="94.0" text="Customer ID :">
+      <Label layoutX="29.0" layoutY="85.0" prefHeight="26.0" prefWidth="94.0" text="Customer ID :">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtCustomerId" focusColor="#42a840" layoutX="127.0" layoutY="85.0" prefHeight="26.0" prefWidth="177.0" />
-      <Label layoutX="39.0" layoutY="124.0" prefHeight="26.0" prefWidth="94.0" text="Title               :">
+      <JFXTextField fx:id="txtCustomerId" focusColor="#42a840" layoutX="127.0" layoutY="85.0" prefHeight="26.0" prefWidth="186.0" />
+      <Label layoutX="32.0" layoutY="124.0" prefHeight="26.0" prefWidth="94.0" text="Title               :">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextArea fx:id="txtTitle" focusColor="#42a840" layoutX="133.0" layoutY="124.0" prefHeight="55.0" prefWidth="178.0" />
-      <Label layoutX="39.0" layoutY="215.0" prefHeight="26.0" prefWidth="88.0" text="Name             :">
+      <JFXTextArea fx:id="txtTitle" focusColor="#42a840" layoutX="130.0" layoutY="137.0" prefHeight="55.0" prefWidth="186.0" />
+      <Label layoutX="32.0" layoutY="215.0" prefHeight="26.0" prefWidth="88.0" text="Name             :">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtName" focusColor="#42a840" layoutX="133.0" layoutY="215.0" prefHeight="26.0" prefWidth="178.0" />
+      <JFXTextField fx:id="txtName" focusColor="#42a840" layoutX="130.0" layoutY="215.0" prefHeight="26.0" prefWidth="186.0" />
       <Label layoutX="33.0" layoutY="271.0" prefHeight="26.0" prefWidth="94.0" text="Date Of Birth : ">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <DatePicker fx:id="dPDateOfBith" layoutX="127.0" layoutY="272.0" prefHeight="26.0" prefWidth="178.0" />
+      <DatePicker fx:id="dPDateOfBith" layoutX="127.0" layoutY="272.0" prefHeight="26.0" prefWidth="186.0" />
       <Label layoutX="32.0" layoutY="314.0" prefHeight="26.0" prefWidth="94.0" text="Salary             : ">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
@@ -73,36 +73,36 @@
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtAddress" focusColor="#42a840" layoutX="127.0" layoutY="357.0" prefHeight="26.0" prefWidth="186.0" />
+      <JFXTextField fx:id="txtAddress" focusColor="#42a840" layoutX="126.0" layoutY="357.0" prefHeight="26.0" prefWidth="186.0" />
       <Label layoutX="36.0" layoutY="402.0" prefHeight="26.0" prefWidth="94.0" text="City              :     ">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtCity" focusColor="#42a840" layoutX="123.0" layoutY="402.0" prefHeight="26.0" prefWidth="193.0" />
+      <JFXTextField fx:id="txtCity" focusColor="#42a840" layoutX="127.0" layoutY="402.0" prefHeight="26.0" prefWidth="186.0" />
       <Label layoutX="36.0" layoutY="447.0" prefHeight="26.0" prefWidth="88.0" text="Province   :     ">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXComboBox fx:id="cmbProvince" focusColor="#42a840" layoutX="123.0" layoutY="448.0" prefHeight="26.0" prefWidth="194.0" />
-      <Label layoutX="32.0" layoutY="490.0" prefHeight="26.0" prefWidth="94.0" text="Postal Code   : ">
+      <JFXComboBox fx:id="cmbProvince" focusColor="#42a840" layoutX="127.0" layoutY="447.0" prefHeight="26.0" prefWidth="186.0" />
+      <Label layoutX="32.0" layoutY="490.0" prefHeight="26.0" prefWidth="94.0" text="Postal Code  : ">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtPostalCode" focusColor="#42a840" layoutX="129.0" layoutY="490.0" prefHeight="26.0" prefWidth="186.0" />
-      <JFXButton layoutX="88.0" layoutY="552.0" prefHeight="39.0" prefWidth="70.0" style="-fx-background-color: #9ef01a;" text="Add" textFill="WHITE">
+      <JFXTextField fx:id="txtPostalCode" focusColor="#42a840" layoutX="127.0" layoutY="493.0" prefHeight="26.0" prefWidth="178.0" />
+      <JFXButton fx:id="btnAdd" layoutX="88.0" layoutY="552.0" onAction="#btnAddOnAction" prefHeight="39.0" prefWidth="70.0" style="-fx-background-color: #9ef01a;" text="Add" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="182.0" layoutY="552.0" prefHeight="39.0" prefWidth="94.0" style="-fx-background-color: #9ef01a;" text="Update" textFill="WHITE">
+      <JFXButton fx:id="btnUpdate" layoutX="182.0" layoutY="552.0" onAction="#btnUpdateOnAction" prefHeight="39.0" prefWidth="94.0" style="-fx-background-color: #9ef01a;" text="Update" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="305.0" layoutY="552.0" prefHeight="39.0" prefWidth="88.0" style="-fx-background-color: #9ef01a;" text="Delete" textFill="WHITE">
+      <JFXButton fx:id="btndelete" layoutX="296.0" layoutY="552.0" onAction="#btnDeleteOnAction" prefHeight="39.0" prefWidth="88.0" style="-fx-background-color: #9ef01a;" text="Delete" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="16.0" />
          </font>

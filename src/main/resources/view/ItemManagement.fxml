@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="418.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemManagementFormComtroller">
+<AnchorPane prefHeight="418.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemManagementFormController">
    <children>
       <TableView layoutX="397.0" layoutY="96.0" prefHeight="272.0" prefWidth="427.0">
         <columns>
@@ -61,17 +61,17 @@
          </font>
       </Label>
       <JFXTextField fx:id="txtQtyOnHand" focusColor="#42a840" layoutX="143.0" layoutY="288.0" prefHeight="26.0" prefWidth="177.0" />
-      <JFXButton layoutX="39.0" layoutY="357.0" prefHeight="39.0" prefWidth="79.0" style="-fx-background-color: #9ef01a;" text="Add" textFill="WHITE">
+      <JFXButton fx:id="btnAdd" layoutX="41.0" layoutY="355.0" onAction="#btnAddOnAction" prefHeight="39.0" prefWidth="70.0" style="-fx-background-color: #9ef01a;" text="Add" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="152.0" layoutY="357.0" prefHeight="39.0" prefWidth="79.0" style="-fx-background-color: #9ef01a;" text="Update" textFill="WHITE">
+      <JFXButton fx:id="btnUpdate" layoutX="135.0" layoutY="355.0" onAction="#btnUpdateOnAction" prefHeight="39.0" prefWidth="94.0" style="-fx-background-color: #9ef01a;" text="Update" textFill="WHITE">
          <font>
-            <Font name="Berlin Sans FB" size="16.0" />
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="265.0" layoutY="357.0" prefHeight="39.0" prefWidth="79.0" style="-fx-background-color: #9ef01a;" text="Delete" textFill="WHITE">
+      <JFXButton fx:id="btndelete" layoutX="249.0" layoutY="355.0" onAction="#btnDeleteOnAction" prefHeight="39.0" prefWidth="88.0" style="-fx-background-color: #9ef01a;" text="Delete" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="16.0" />
          </font>
