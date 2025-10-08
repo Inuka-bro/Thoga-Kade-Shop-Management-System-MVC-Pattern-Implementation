@@ -6,7 +6,7 @@ import model.Customer;
 public interface CustomerManagementService {
     boolean addCustomerDetails(Customer customer);
     boolean updateCustomerDetails(Customer customer);
-    boolean deleteCustomerDetails();
+    boolean deleteCustomerDetails(String CustomerID);
     ObservableList<Customer> getAllCustomerDetails();
 
 }

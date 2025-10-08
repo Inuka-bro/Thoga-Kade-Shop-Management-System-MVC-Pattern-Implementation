@@ -15,6 +15,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import model.Customer;
 
+import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
 import java.time.LocalDate;
@@ -87,8 +88,10 @@ public class CustomerManagementFormController extends Component implements Initi
     @FXML
     private JFXTextField txtSalary;
 
+
     @FXML
-    private JFXTextArea txtTitle;
+    private JFXComboBox<String> cmbTitle;
+
 
     CustomerManagementService customerManagementService = new CustomerManagementController();
 
@@ -99,21 +102,36 @@ public class CustomerManagementFormController extends Component implements Initi
         String address = txtAddress.getText();
         String city = txtCity.getText();
         Double salary = Double.parseDouble(txtSalary.getText());
-        String title = txtTitle.getText();
+        String title = cmbTitle.getValue();
         String postalCode = txtPostalCode.getText();
         String name = txtName.getText();
         LocalDate dob = dPDateOfBith.getValue();
         String province = cmbProvince.getValue();
 
 
-        customerManagementService.addCustomerDetails(
+        boolean isAdded=customerManagementService.addCustomerDetails(
                 new Customer(customerId, name, title, dob, salary, address, city, province, postalCode)
         );
+        if(isAdded){
+            JOptionPane.showConfirmDialog(this,"Added Successfully");
+            loadCustomerDetails();
+        }
+        else{
+            JOptionPane.showConfirmDialog(this,"Added not Successfully");
+        }
     }
 
     @FXML
     void btnDeleteOnAction(ActionEvent event) {
+        Boolean isDeleted=customerManagementService.deleteCustomerDetails(txtCustomerId.getText());
 
+        if(isDeleted){
+            JOptionPane.showConfirmDialog(this,"Deleted Sucessfully");
+            loadCustomerDetails();
+        }
+        else{
+            JOptionPane.showConfirmDialog(this,"Deleted not Sucessfully");
+        }
     }
 
     @FXML
@@ -123,16 +141,21 @@ public class CustomerManagementFormController extends Component implements Initi
         String address = txtAddress.getText();
         String city = txtCity.getText();
         Double salary = Double.parseDouble(txtSalary.getText());
-        String title = txtTitle.getText();
+        String title = cmbTitle.getValue();
         String postalCode = txtPostalCode.getText();
         String name = txtName.getText();
         LocalDate dob = dPDateOfBith.getValue();
         String province = cmbProvince.getValue();
 
 
-        customerManagementService.updateCustomerDetails(
+        boolean isUpdated=customerManagementService.updateCustomerDetails(
                 new Customer(customerId, name, title, dob, salary, address, city, province, postalCode)
         );
+
+        if(isUpdated){
+            JOptionPane.showConfirmDialog(this,"Updated Successfully");
+            loadCustomerDetails();
+        }
 
     }
 
@@ -143,7 +166,10 @@ public class CustomerManagementFormController extends Component implements Initi
                 "Southern",
                 "Western",
                 "Eastern",
-                "Northern"
+                "Northern",
+                "Sabaragamuwa",
+                "Wayamba",
+                "Central"
         );
         cmbProvince.setItems(provinceList);
 
@@ -157,15 +183,44 @@ public class CustomerManagementFormController extends Component implements Initi
         colSalary.setCellValueFactory(new PropertyValueFactory<>("salary"));
         colProvince.setCellValueFactory(new PropertyValueFactory<>("province"));
 
+        ObservableList<String> titleList = FXCollections.observableArrayList(
+                "Mr",
+                "Miss",
+                "Ms"
+        );
+        cmbTitle.setItems(titleList);
+
         loadCustomerDetails();
+
+        tblCustomerDetails.getSelectionModel().selectedItemProperty().addListener(((observableValue, oldValue, newValue) ->{
+            if(newValue!=null){
+                setSelectedValue(newValue);
+
+            }
+        }));
 
     }
 
     public void loadCustomerDetails() {
 
+        customerDetailsList.clear();
         customerDetailsList=customerManagementService.getAllCustomerDetails();
         tblCustomerDetails.setItems(customerDetailsList);
     }
+
+    public void setSelectedValue(Customer customer){
+        txtCustomerId.setText(customer.getCustomerID());
+        txtName.setText(customer.getName());
+        txtCity.setText(customer.getCity());
+        txtAddress.setText(customer.getAddress());
+        txtSalary.setText(String.valueOf(customer.getSalary()));
+        txtPostalCode.setText(customer.getPostalCode());
+        cmbTitle.setValue(customer.getTitle());
+        cmbProvince.setValue(customer.getProvince());
+        dPDateOfBith.setValue(customer.getDob());
+    }
+
+
 
 
 }
