@@ -10,15 +10,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="418.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemManagementFormController">
+<AnchorPane prefHeight="418.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.itemController.ItemManagementFormController">
    <children>
       <TableView layoutX="397.0" layoutY="96.0" prefHeight="272.0" prefWidth="427.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Item Code" />
-          <TableColumn prefWidth="75.0" text="Description" />
-            <TableColumn prefWidth="75.0" text="Pack Size" />
-            <TableColumn prefWidth="98.4000244140625" text="Unit Price" />
-            <TableColumn prefWidth="98.4000244140625" text="Qty On Hand" />
+          <TableColumn fx:id="colItemCode" prefWidth="75.0" text="Item Code" />
+          <TableColumn fx:id="colDescription" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="colPackSize" prefWidth="75.0" text="Pack Size" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="98.4000244140625" text="Unit Price" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="98.4000244140625" text="Qty On Hand" />
         </columns>
       </TableView>
       <Label alignment="CENTER" layoutX="215.0" layoutY="32.0" prefHeight="39.0" prefWidth="460.0" text="Item Management Form">

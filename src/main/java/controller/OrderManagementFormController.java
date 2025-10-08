@@ -4,6 +4,7 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.TableColumn;
 
 public class OrderManagementFormController {
 
@@ -15,6 +16,15 @@ public class OrderManagementFormController {
 
     @FXML
     private JFXButton btndelete;
+
+    @FXML
+    private TableColumn<?, ?> colCustomerId;
+
+    @FXML
+    private TableColumn<?, ?> colOrderDate;
+
+    @FXML
+    private TableColumn<?, ?> colOrderId;
 
     @FXML
     private JFXTextField txtCustomerId;

@@ -1,9 +1,10 @@
-package controller;
+package controller.itemController;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.TableColumn;
 
 public class ItemManagementFormController {
 
@@ -15,6 +16,21 @@ public class ItemManagementFormController {
 
     @FXML
     private JFXButton btndelete;
+
+    @FXML
+    private TableColumn<?, ?> colDescription;
+
+    @FXML
+    private TableColumn<?, ?> colItemCode;
+
+    @FXML
+    private TableColumn<?, ?> colPackSize;
+
+    @FXML
+    private TableColumn<?, ?> colQtyOnHand;
+
+    @FXML
+    private TableColumn<?, ?> colUnitPrice;
 
     @FXML
     private JFXTextField txtDescription;

@@ -14,10 +14,10 @@
    <children>
       <TableView layoutX="379.0" layoutY="96.0" prefHeight="272.0" prefWidth="326.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Order Id" />
-          <TableColumn prefWidth="75.0" text="Item Code" />
-            <TableColumn prefWidth="75.0" text="Order QTY" />
-            <TableColumn prefWidth="98.4000244140625" text="Discount" />
+          <TableColumn fx:id="colOrderId" prefWidth="75.0" text="Order Id" />
+          <TableColumn fx:id="colItemCode" prefWidth="75.0" text="Item Code" />
+            <TableColumn fx:id="colOrderQty" prefWidth="75.0" text="Order QTY" />
+            <TableColumn fx:id="colDiscount" prefWidth="98.4000244140625" text="Discount" />
         </columns>
       </TableView>
       <Label alignment="CENTER" layoutX="147.0" layoutY="31.0" prefHeight="39.0" prefWidth="514.0" text="OrderDetail Management Form">
